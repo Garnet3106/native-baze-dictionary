@@ -1,0 +1,427 @@
+body {
+    align-items: center;
+    background-color: #eeeeee;
+    display: flex;
+    color: #000000;
+    font-family: 'ヒラギノ丸ゴ Pro', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+div.bottomlinks {
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 5px;
+}
+
+div.bottomlinks-item {
+    border-right: solid 1px #333333;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 0 15px;
+    transition: background-color 200ms 0s ease;
+}
+
+div.bottomlinks-item:last-child {
+    border: none;
+}
+
+div.bottomlinks-item:hover {
+    background-color: #dddddd;
+}
+
+div.bottomlinks-item:active {
+    background-color: #bbbbbb;
+}
+
+div.main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.popup {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 200ms 0s ease;
+    width: 100vw;
+}
+
+div.popup-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+div.popup-content > div {
+    margin-bottom: 25px;
+}
+
+div.popup-content > div:last-child {
+    margin: 0;
+}
+
+div.popup-content-bottom {
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+div.popup-content-bottom > div {
+    margin-right: 20px;
+}
+
+div.popup-content-bottom > div:last-child {
+    margin: 0;
+}
+
+.popup-content-bottom-button {
+    align-items: center;
+    background-color: #eeeeee;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    height: 30px;
+    justify-content: center;
+    transition: all 200ms 0s ease;
+    width: 80px;
+}
+
+.popup-content-bottom-button:active {
+    background-color: #dddddd !important;
+}
+
+div.popup-content-upload {
+    background-color: #ffffff;
+    border: dashed 1px #333333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms 0s ease;
+}
+
+div.popup-content-upload:hover {
+    background-color: #eeeeee !important;
+}
+
+div.popup-content-upload:active {
+    background-color: #dddddd !important;
+}
+
+div.popup-content-upload-message {
+    display: inline-block;
+    margin: 20px;
+}
+
+div.popup-content-main {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+div.popup-content-main-inputarea {
+    padding: 20px;
+}
+
+div.popup-content-main-inputarea-pair {
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+div.popup-content-main-inputarea-pair:last-child {
+    margin: 0;
+}
+
+div.popup-content-main-inputarea-pair > * {
+    margin-right: 15px;
+}
+
+div.popup-content-main-inputarea-pair > *:last-child {
+    margin: 0;
+}
+
+div.popup-content-main-inputarea-pair > div {
+    text-align: right;
+    width: 60px;
+}
+
+div.popup-content-main-inputarea-pair > img {
+    background-color: #ffffff;
+    border-radius: calc(25px / 2);
+    cursor: pointer;
+    height: 25px;
+    transition: all 200ms 0s ease;
+    width: 25px;
+}
+
+div.popup-content-main-inputarea-pair > img:hover {
+    background-color: #eeeeee;
+}
+
+div.popup-content-main-inputarea-pair > img:active {
+    background-color: #dddddd;
+}
+
+div.popup-content-main-inputarea-pair > input {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    outline: none;
+    text-align: center;
+    width: 120px;
+}
+
+div.popup-content-main-inputarea-pair > select {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    outline: none;
+    width: 80px;
+}
+
+div.popup-content-main-message {
+    display: inline-block;
+    margin: 20px;
+}
+
+div.popup-content-top {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+div.popup-content-top > * {
+    margin-right: 5px;
+}
+
+div.popup-content-top > *:last-child {
+    margin: 0;
+}
+
+img.popup-content-top-icon {
+    height: 30px;
+    width: 30px;
+}
+
+div.popup-content-top-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.top {
+    background: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+div.top-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+img.top-icons-item {
+    margin-right: 10px;
+}
+
+img.top-icons-item:last-child {
+    margin: 0;
+}
+
+img.top-icons-item#topIconLogo {
+    height: 20px;
+    width: 20px;
+}
+
+img.top-icons-item#topIconTitle {
+    height: 20px;
+    width: 150px;
+}
+
+div.top-inputarea {
+}
+
+input.top-inputarea-input {
+    display: inline-block;
+    border: solid 1px #333333;
+    border-radius: 8px;
+    font-size: 15px;
+    height: 25px;
+    outline: none;
+    text-align: center;
+    width: 200px;
+}
+
+img.top-title {
+    width: 200px;
+}
+
+div.workarea {
+    border-radius: 15px;
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    width: 80vh;
+}
+
+div.workarea-sidemenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40px;
+}
+
+div.workarea-sidemenu-item {
+    background-color: #ffffff;
+    display: flex;
+    transition: all 200ms 0s ease;
+}
+
+div.workarea-sidemenu-item-icon {
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 40px;
+    transition: all 200ms 0s ease;
+    width: 40px;
+}
+
+div.workarea-sidemenu-item-icon#leftMenuAddTop {
+    background-image: url('../img/add.svg');
+}
+
+div.workarea-sidemenu-item-icon#leftMenuEditTop {
+    background-image: url('../img/edit.svg');
+}
+
+div.workarea-sidemenu-item-icon#leftMenuRemoveTop {
+    background-image: url('../img/remove.svg');
+}
+
+div.workarea-sidemenu-item-icon#leftMenuDownloadTop {
+    background-image: url('../img/download.svg');
+}
+
+div.workarea-sidemenu-item-icon#leftMenuUploadTop {
+    background-image: url('../img/upload.svg');
+}
+
+div.workarea-sidemenu-item-icon#rightMenuDocsTop {
+    background-image: url('../img/docs.svg');
+}
+
+div.workarea-sidemenu-item-icon#rightMenuShareTop {
+    background-image: url('../img/share.svg');
+}
+
+div.workarea-sidemenu-item-icon#rightMenuShareLink {
+    background-image: url('../img/link.svg');
+}
+
+div.workarea-sidemenu-item-icon#rightMenuShareTwitter {
+    background-image: url('../img/twitter.svg');
+}
+
+div.workarea-sidemenu-item-icon#rightMenuSettingsTop {
+    background-image: url('../img/settings.svg');
+}
+
+div.workarea-sidemenu-item-icon:last-child {
+    border: none;
+}
+
+div.workarea-sidemenu-item-icon:hover {
+    background-color: #dddddd !important;
+}
+
+div.workarea-sidemenu-item-icon:active {
+    background-color: #cccccc !important;
+}
+
+div.workarea-wordlist {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    -ms-overflow-style: none;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: calc(100% - 120px);
+}
+
+div.workarea-wordlist::-webkit-scrollbar {
+    display: none;
+}
+
+div.workarea-wordlist-guide {
+    align-items: center;
+    color: #888888;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+div.workarea-wordlist-item {
+    align-items: center;
+    border-bottom: solid 1px #333333;
+    cursor: pointer;
+    display: flex;
+    padding: 8px 20px;
+    transition: all 200ms 0s ease;
+}
+
+div.workarea-wordlist-item:last-child {
+    border: none;
+}
+
+div.workarea-wordlist-item:hover {
+    background-color: #eeeeee !important;
+}
+
+div.workarea-wordlist-item:active {
+    background-color: #dddddd;
+}
+
+div.workarea-wordlist-item-class {
+    margin-right: 20px;
+}
+
+div.workarea-wordlist-item-spelling {
+    margin-right: 20px;
+}
+
+div.workarea-wordlist-item-translation {
+    color: #555555;
+    font-size: 13px;
+}
+
+div.workarea-wordlist-item-type {
+    font-size: 15px;
+    margin-right: 20px;
+}
