@@ -41,6 +41,10 @@ div.bottomlinks-item:active {
     background-color: #bbbbbb;
 }
 
+.hidden {
+    display: none !important;
+}
+
 div.main {
     align-items: center;
     display: flex;
