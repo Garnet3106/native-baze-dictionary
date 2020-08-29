@@ -304,6 +304,7 @@ div.workarea-sidemenu-item {
     background-color: #ffffff;
     display: flex;
     transition: all 200ms 0s ease;
+    width: 40px;
 }
 
 div.workarea-sidemenu-item-icon {
