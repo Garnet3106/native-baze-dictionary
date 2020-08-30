@@ -6,6 +6,11 @@
 
 単語の登録や編集、データベースのインポート/エクスポートなどの機能に対応しています。
 
+- [バゼ語版](bz/)
+- [英語版](en/)
+- [エスペラント版](eo/)
+- [日本語版](ja/)
+
 ## 目次
 
 - [概要](#概要)
@@ -54,4 +59,10 @@ jQueryの代わりとして自作のjQuery風ライブラリを使っていま�
 
 ## 連絡先
 
-- Twitter ... [@Garnet3106](https://twitter.com/Garnet3106)
+アプリの不具合や誤植・誤訳などがありましたらご連絡ください。
+
+どちらからもご連絡いただけます。
+
+- Twitter
+    - 制作者 ... [@Garnet3106](https://twitter.com/Garnet3106)
+    - バゼ語公式 ... [@bazelinga](https://twitter.com/bazelinga)
