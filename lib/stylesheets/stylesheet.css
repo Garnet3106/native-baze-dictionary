@@ -1,3 +1,30 @@
+/* 
+ * 
+ * Baze Language Dictionary
+ * 
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * 
+ * PLEASE CHECK THE LICENSE FOR USING SOURCES:
+ *     https://garnet3106.github.io/native-baze-dictionary/how_to_use.html
+ * 
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * 
+ * Homepage: http://bazelinga.gant.work/
+ * Repository: https://github.com/Garnet3106/bazelinga
+ * 
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * 
+ * Official Twitter: https://twitter.com/bazelinga
+ * Creator's Twitter: https://twitter.com/Garnet3106
+ * 
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * 
+ * Copyright (c) 2020 Garnet3106
+ * 
+ */
+
+
+
 body {
     align-items: center;
     background-color: #eeeeee;
@@ -21,7 +48,6 @@ div.bottomlinks {
 }
 
 div.bottomlinks-item {
-    border-right: solid 1px #333333;
     cursor: pointer;
     font-size: 15px;
     margin: 5px 0;
@@ -29,8 +55,8 @@ div.bottomlinks-item {
     transition: background-color 200ms 0s ease;
 }
 
-div.bottomlinks-item:last-child {
-    border: none;
+div.bottomlinks-item:not(:last-child) {
+    border-right: solid 1px #333333;
 }
 
 div.bottomlinks-item:hover {
@@ -73,12 +99,8 @@ div.popup-content {
     text-align: center;
 }
 
-div.popup-content > div {
+div.popup-content > div:not(:last-child) {
     margin-bottom: 25px;
-}
-
-div.popup-content > div:last-child {
-    margin: 0;
 }
 
 div.popup-content-bottom {
@@ -88,12 +110,8 @@ div.popup-content-bottom {
     width: 100%;
 }
 
-div.popup-content-bottom > div {
+div.popup-content-bottom > div:not(:last-child) {
     margin-right: 20px;
-}
-
-div.popup-content-bottom > div:last-child {
-    margin: 0;
 }
 
 .popup-content-bottom-button {
@@ -149,19 +167,14 @@ div.popup-content-main-inputarea-pair {
     display: flex;
     font-size: 15px;
     justify-content: center;
+}
+
+div.popup-content-main-inputarea-pair:not(:last-child) {
     margin-bottom: 20px;
 }
 
-div.popup-content-main-inputarea-pair:last-child {
-    margin: 0;
-}
-
-div.popup-content-main-inputarea-pair > * {
+div.popup-content-main-inputarea-pair > *:not(:last-child) {
     margin-right: 15px;
-}
-
-div.popup-content-main-inputarea-pair > *:last-child {
-    margin: 0;
 }
 
 div.popup-content-main-inputarea-pair > div {
@@ -216,12 +229,8 @@ div.popup-content-top {
     justify-content: center;
 }
 
-div.popup-content-top > * {
+div.popup-content-top > *:not(:last-child) {
     margin-right: 5px;
-}
-
-div.popup-content-top > *:last-child {
-    margin: 0;
 }
 
 img.popup-content-top-icon {
@@ -249,12 +258,8 @@ div.top-icons {
     margin-bottom: 10px;
 }
 
-img.top-icons-item {
+img.top-icons-item:not(:last-child) {
     margin-right: 10px;
-}
-
-img.top-icons-item:last-child {
-    margin: 0;
 }
 
 img.top-icons-item#topIconLogo {
@@ -265,9 +270,6 @@ img.top-icons-item#topIconLogo {
 img.top-icons-item#topIconTitle {
     height: 20px;
     width: 150px;
-}
-
-div.top-inputarea {
 }
 
 input.top-inputarea-input {
@@ -355,10 +357,6 @@ div.workarea-sidemenu-item-icon#rightMenuSettingsTop {
     background-image: url('../img/settings.svg');
 }
 
-div.workarea-sidemenu-item-icon:last-child {
-    border: none;
-}
-
 div.workarea-sidemenu-item-icon:hover {
     background-color: #dddddd !important;
 }
@@ -394,15 +392,14 @@ div.workarea-wordlist-guide {
 
 div.workarea-wordlist-item {
     align-items: center;
-    border-bottom: solid 1px #333333;
     cursor: pointer;
     display: flex;
     padding: 8px 20px;
     transition: all 200ms 0s ease;
 }
 
-div.workarea-wordlist-item:last-child {
-    border: none;
+div.workarea-wordlist-item:not(:last-child) {
+    border-bottom: solid 1px #333333;
 }
 
 div.workarea-wordlist-item:hover {
