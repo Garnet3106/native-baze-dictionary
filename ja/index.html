@@ -9,8 +9,10 @@
         <script src="../lib/scripts/interface.js"></script>
         <script src="../lib/scripts/langpack.js"></script>
         <script src="../lib/scripts/popup.js"></script>
+        <script src="../lib/scripts/wordlist.js"></script>
         <script>
-            new Interface('ja');
+            // 'interface' は予約語 (strictモードでは使えない)
+            let mainInterface = new Interface('ja');
         </script>
         <title>Loading...</title>
     </head>
