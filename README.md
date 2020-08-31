@@ -32,7 +32,7 @@
     - OS: **macOS**
     - ブラウザ: **Chromium系** ... **Google Chrome** / **Vivaldi** など
 
-- サポート環境: 表示が変わることがあるが利用は可能です。
+- サポート環境: 細かな表示の違いはありますが利用は可能です。
 
     - ブラウザ: **Mozila FireFox** / **Safari** / **Opera**
 
